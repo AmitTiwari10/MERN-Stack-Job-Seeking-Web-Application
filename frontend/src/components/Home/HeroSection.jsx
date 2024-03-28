@@ -1,30 +1,30 @@
-import React from "react";
+// import React from "react";
 import { FaBuilding, FaSuitcase, FaUsers, FaUserPlus } from "react-icons/fa";
 
 const HeroSection = () => {
   const details = [
     {
       id: 1,
-      title: "1,23,441",
-      subTitle: "Live Job",
+      title: "100+",
+      subTitle: "Live Offers",
       icon: <FaSuitcase />,
     },
     {
       id: 2,
-      title: "91220",
+      title: "10+",
       subTitle: "Companies",
       icon: <FaBuilding />,
     },
     {
       id: 3,
-      title: "2,34,200",
+      title: "3",
       subTitle: "Job Seekers",
       icon: <FaUsers />,
     },
     {
       id: 4,
-      title: "1,03,761",
-      subTitle: "Employers",
+      title: "200",
+      subTitle: "Advertiser",
       icon: <FaUserPlus />,
     },
   ];
@@ -33,12 +33,10 @@ const HeroSection = () => {
       <div className="heroSection">
         <div className="container">
           <div className="title">
-            <h1>Find a job that suits</h1>
-            <h1>your interests and skills</h1>
+            <h1>Achieve Your Performance </h1>
+            <h1>Marketing Goals Now!</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              voluptate repellat modi quidem aliquid eaque ducimus ipsa et,
-              facere mollitia!
+            Sea Media leverages its audience building technology along with our owned and operated web properties to enable advertisers reach target customers and achieve performance marketing goals.
             </p>
           </div>
           <div className="image">

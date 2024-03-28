@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { FaCheck } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
@@ -162,36 +162,36 @@ const MyJobs = () => {
                               editingMode !== element._id ? true : false
                             }
                           >
-                            <option value="Graphics & Design">
-                              Graphics & Design
+                            <option value="Health and Wellness">
+                            Health and Wellness
                             </option>
-                            <option value="Mobile App Development">
-                              Mobile App Development
+                            <option value="Fashion and Beauty">
+                            Fashion and Beauty
                             </option>
-                            <option value="Frontend Web Development">
-                              Frontend Web Development
+                            <option value="Technology and Electronics">
+                            Technology and Electronics
                             </option>
-                            <option value="MERN Stack Development">
-                              MERN STACK Development
+                            <option value="Finance and Insurance">
+                            Finance and Insurance
                             </option>
-                            <option value="Account & Finance">
-                              Account & Finance
+                            <option value="Food and Beverage">
+                            Food and Beverage
                             </option>
-                            <option value="Artificial Intelligence">
-                              Artificial Intelligence
+                            <option value="Education and Training">
+                            Education and Training
                             </option>
-                            <option value="Video Animation">
-                              Video Animation
+                            <option value="Entertainment">
+                            Entertainment
                             </option>
-                            <option value="MEAN Stack Development">
-                              MEAN STACK Development
+                            <option value="Pet Care">
+                            Pet Care
                             </option>
-                            <option value="MEVN Stack Development">
+                            {/* <option value="MEVN Stack Development">
                               MEVN STACK Development
                             </option>
                             <option value="Data Entry Operator">
                               Data Entry Operator
-                            </option>
+                            </option> */}
                           </select>
                         </div>
                         <div>
@@ -344,7 +344,7 @@ const MyJobs = () => {
             </>
           ) : (
             <p>
-              You've not posted any job or may be you deleted all of your jobs!
+             not posted any job or may be you deleted all of your jobs!
             </p>
           )}
         </div>

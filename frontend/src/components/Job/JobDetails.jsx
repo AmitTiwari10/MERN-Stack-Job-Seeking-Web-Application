@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import   { useContext, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +18,7 @@ const JobDetails = () => {
       .then((res) => {
         setJob(res.data.job);
       })
-      .catch((error) => {
+      .catch(() => {
         navigateTo("/notfound");
       });
   }, []);
@@ -59,7 +59,7 @@ const JobDetails = () => {
               <span>{job.fixedSalary}</span>
             ) : (
               <span>
-                {job.salaryFrom} - {job.salaryTo}
+                {job.salaryFrom}$ - {job.salaryTo}$
               </span>
             )}
           </p>

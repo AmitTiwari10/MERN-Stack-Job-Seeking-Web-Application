@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import  { useContext, useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
@@ -19,10 +19,10 @@ const PostJob = () => {
 
   const handleJobPost = async (e) => {
     e.preventDefault();
-    if (salaryType === "Fixed Salary") {
+    if (salaryType === "Fixed Amount") {
       setSalaryFrom("");
       setSalaryFrom("");
-    } else if (salaryType === "Ranged Salary") {
+    } else if (salaryType === "") {
       setFixedSalary("");
     } else {
       setSalaryFrom("");
@@ -76,42 +76,44 @@ const PostJob = () => {
     <>
       <div className="job_post page">
         <div className="container">
-          <h3>POST NEW JOB</h3>
+          <h3>POST NEW OFFERS</h3>
           <form onSubmit={handleJobPost}>
             <div className="wrapper">
               <input
                 type="text"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
-                placeholder="Job Title"
+                placeholder="Offer Title"
               />
               <select
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
               >
                 <option value="">Select Category</option>
-                <option value="Graphics & Design">Graphics & Design</option>
-                <option value="Mobile App Development">
-                  Mobile App Development
-                </option>
-                <option value="Frontend Web Development">
-                  Frontend Web Development
-                </option>
-                <option value="MERN Stack Development">
-                  MERN STACK Development
-                </option>
-                <option value="Account & Finance">Account & Finance</option>
-                <option value="Artificial Intelligence">
-                  Artificial Intelligence
-                </option>
-                <option value="Video Animation">Video Animation</option>
-                <option value="MEAN Stack Development">
-                  MEAN STACK Development
-                </option>
-                <option value="MEVN Stack Development">
-                  MEVN STACK Development
-                </option>
-                <option value="Data Entry Operator">Data Entry Operator</option>
+                <option value="Health and Wellness">
+                            Health and Wellness
+                            </option>
+                            <option value="Fashion and Beauty">
+                            Fashion and Beauty
+                            </option>
+                            <option value="Technology and Electronics">
+                            Technology and Electronics
+                            </option>
+                            <option value="Finance and Insurance">
+                            Finance and Insurance
+                            </option>
+                            <option value="Food and Beverage">
+                            Food and Beverage
+                            </option>
+                            <option value="Education and Training">
+                            Education and Training
+                            </option>
+                            <option value="Entertainment">
+                            Entertainment
+                            </option>
+                            <option value="Pet Care">
+                            Pet Care
+                            </option>
               </select>
             </div>
             <div className="wrapper">
@@ -139,17 +141,17 @@ const PostJob = () => {
                 value={salaryType}
                 onChange={(e) => setSalaryType(e.target.value)}
               >
-                <option value="default">Select Salary Type</option>
-                <option value="Fixed Salary">Fixed Salary</option>
-                <option value="Ranged Salary">Ranged Salary</option>
+                <option value="default">Select Amount Type</option>
+                <option value="Fixed Amount">Fixed Amount</option>
+                <option value="Ranged Amount">Ranged Amount</option>
               </select>
               <div>
                 {salaryType === "default" ? (
                   <p>Please provide Salary Type *</p>
-                ) : salaryType === "Fixed Salary" ? (
+                ) : salaryType === "Fixed Amount" ? (
                   <input
                     type="number"
-                    placeholder="Enter Fixed Salary"
+                    placeholder="Enter Fixed Amount"
                     value={fixedSalary}
                     onChange={(e) => setFixedSalary(e.target.value)}
                   />
@@ -177,7 +179,7 @@ const PostJob = () => {
               onChange={(e) => setDescription(e.target.value)}
               placeholder="Job Description"
             />
-            <button type="submit">Create Job</button>
+            <button type="submit">OceanMedia.Job</button>
           </form>
         </div>
       </div>

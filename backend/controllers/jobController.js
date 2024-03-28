@@ -11,7 +11,8 @@ export const getAllJobs = catchAsyncErrors(async (req, res, next) => {
 });
 
 export const postJob = catchAsyncErrors(async (req, res, next) => {
-  const { role } = req.user;
+  console.log(req.body);
+  const { role } = req?.user;
   if (role === "Job Seeker") {
     return next(
       new ErrorHandler("Job Seeker not allowed to access this resource.", 400)
@@ -36,7 +37,7 @@ export const postJob = catchAsyncErrors(async (req, res, next) => {
   if ((!salaryFrom || !salaryTo) && !fixedSalary) {
     return next(
       new ErrorHandler(
-        "Please either provide fixed salary or ranged salary.",
+        "Please either provide fixed salary or ranged Amount.",
         400
       )
     );
@@ -44,10 +45,10 @@ export const postJob = catchAsyncErrors(async (req, res, next) => {
 
   if (salaryFrom && salaryTo && fixedSalary) {
     return next(
-      new ErrorHandler("Cannot Enter Fixed and Ranged Salary together.", 400)
+      new ErrorHandler("Cannot Enter Fixed and Ranged Amount together.", 400)
     );
   }
-  const postedBy = req.user._id;
+  const postedBy = req?.user?._id;
   const job = await Job.create({
     title,
     description,

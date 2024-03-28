@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import {
   MdOutlineDesignServices,
   MdOutlineWebhook,
@@ -14,49 +14,49 @@ const PopularCategories = () => {
   const categories = [
     {
       id: 1,
-      title: "Graphics & Design",
+      title: "Health and Wellness",
       subTitle: "305 Open Positions",
       icon: <MdOutlineDesignServices />,
     },
     {
       id: 2,
-      title: "Mobile App Development",
+      title: "Fashion and Beauty",
       subTitle: "500 Open Positions",
       icon: <TbAppsFilled />,
     },
     {
       id: 3,
-      title: "Frontend Web Development",
+      title: "Technology and Electronics",
       subTitle: "200 Open Positions",
       icon: <MdOutlineWebhook />,
     },
     {
       id: 4,
-      title: "MERN STACK Development",
+      title: "Finance and Insurance",
       subTitle: "1000+ Open Postions",
       icon: <FaReact />,
     },
     {
       id: 5,
-      title: "Account & Finance",
+      title: "Food and Beverage",
       subTitle: "150 Open Positions",
       icon: <MdAccountBalance />,
     },
     {
       id: 6,
-      title: "Artificial Intelligence",
+      title: "Education and Training",
       subTitle: "867 Open Positions",
       icon: <GiArtificialIntelligence />,
     },
     {
       id: 7,
-      title: "Video Animation",
+      title: "Entertainment",
       subTitle: "50 Open Positions",
       icon: <MdOutlineAnimation />,
     },
     {
       id: 8,
-      title: "Game Development",
+      title: "Pet Care",
       subTitle: "80 Open Positions",
       icon: <IoGameController />,
     },

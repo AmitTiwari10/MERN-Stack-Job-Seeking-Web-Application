@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import  { useContext, useState } from "react";
 import { Context } from "../../main";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -40,7 +40,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link to={"/job/getall"} onClick={() => setShow(false)}>
-              ALL JOBS
+              ALL OFFERS
             </Link>
           </li>
           <li>
@@ -54,12 +54,12 @@ const Navbar = () => {
             <>
               <li>
                 <Link to={"/job/post"} onClick={() => setShow(false)}>
-                  POST NEW JOB
+                  POST NEW OFFERS
                 </Link>
               </li>
               <li>
                 <Link to={"/job/me"} onClick={() => setShow(false)}>
-                  VIEW YOUR JOBS
+                  VIEW YOUR OFFERS
                 </Link>
               </li>
             </>

@@ -87,8 +87,8 @@ POPULAR COMPANIES:
 const companies = [
     {
       id: 1,
-      title: "Microsoft",
-      location: "Street 10 Karachi, Pakistan",
+      title: "Adcombo",
+      location: "2323 32 Ave NE, Calgary, Canada, and 717 7 Ave SW #160, Calgary, Canada.",
       openPositions: 10,
       icon: <FaMicrosoft />,
     },
