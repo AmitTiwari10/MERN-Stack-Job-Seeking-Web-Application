@@ -13,7 +13,7 @@ const Navbar = () => {
   const handleLogout = async () => {
     try {
       const response = await axios.get(
-        "https://seamediabackend-2.onrender.com/api/v1/user/logout",
+        "https://seaback-lafn.onrender.com/api/v1/user/logout",
         {
           withCredentials: true,
         }

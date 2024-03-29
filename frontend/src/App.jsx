@@ -23,7 +23,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "https://seamediabackend-2.onrender.com/api/v1/user/getuser",
+          "https://seaback-lafn.onrender.com/api/v1/user/getuser",
           {
             withCredentials: true,
           }

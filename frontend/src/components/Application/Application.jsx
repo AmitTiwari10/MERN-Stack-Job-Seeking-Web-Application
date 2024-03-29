@@ -35,7 +35,7 @@ const Application = () => {
 
     try {
       const { data } = await axios.post(
-        "https://seamediabackend-2.onrender.com/api/v1/application/post",
+        "https://seaback-lafn.onrender.com/api/v1/application/post",
         formData,
         {
           withCredentials: true,
